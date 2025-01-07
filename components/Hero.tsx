@@ -1,11 +1,9 @@
 import {
-  FaLocationArrow,
   FaEnvelope,
-  FaPhone,
   FaGithub,
   FaLinkedin,
+  FaLocationArrow,
 } from "react-icons/fa6";
-import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
@@ -21,10 +19,7 @@ const Hero = () => {
       <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
 
       {/* Grid Background */}
-      <div
-        className="absolute inset-0 w-full h-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2]
-        flex items-center justify-center z-0"
-      >
+      <div className="absolute inset-0 w-full h-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2] flex items-center justify-center z-0">
         <div
           className="absolute inset-0 pointer-events-none dark:bg-black-100 bg-white
           [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
@@ -41,50 +36,60 @@ const Hero = () => {
           />
           <TextGenerateEffect
             words="a Software Engineer"
-            className="text-5xl md:text-6xl lg:text-7xl font-bold text-purple drop-shadow-lg"
+            className="text-4xl md:text-5xl lg:text-6xl font-medium text-purple drop-shadow-lg"
           />
 
-          <div className="flex flex-col items-center mt-8 space-y-6">
-            <a href="/path-to-cv.pdf" download className="w-full md:w-60">
-              <MagicButton
-                title="Download my CV"
-                icon={<FaLocationArrow />}
-                position="right"
-              />
+          {/* Buttons */}
+          <div className="mt-8 flex flex-wrap justify-center gap-6">
+            {/* Download CV */}
+            <a
+              href="/path-to-cv.pdf"
+              download
+              className="relative inline-flex h-12 w-full md:w-60 overflow-hidden rounded-lg p-[1px] focus:outline-none flex justify-center"
+            >
+              <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+              <span className="inline-flex h-full w-full items-center justify-center rounded-lg bg-slate-950 px-7 text-sm font-medium text-white backdrop-blur-3xl gap-2">
+                Download my CV
+                <FaLocationArrow />
+              </span>
             </a>
 
-            {/* Contact Info Underneath */}
-            <div className="flex gap-8 items-center justify-center mt-6">
-              <a
-                href="mailto:mustafa.ashraf.saad@gmail.com"
-                className="text-lg text-white hover:underline flex items-center"
-              >
-                <FaEnvelope className="mr-2 text-xl" /> Gmail
-              </a>
-              <a
-                href="https://github.com/yourgithub"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-lg text-white hover:underline flex items-center"
-              >
-                <FaGithub className="mr-2 text-xl" /> GitHub
-              </a>
-              <a
-                href="https://linkedin.com/in/yourlinkedin"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-lg text-white hover:underline flex items-center"
-              >
-                <FaLinkedin className="mr-2 text-xl" /> LinkedIn
-              </a>
-            </div>
+            {/* Show My Work */}
+            <a
+              href="#about"
+              className="relative inline-flex h-12 w-full md:w-60 overflow-hidden rounded-lg p-[1px] focus:outline-none justify-center"
+            >
+              <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+              <span className="inline-flex h-full w-full items-center justify-center rounded-lg bg-slate-950 px-7 text-sm font-medium text-white backdrop-blur-3xl gap-2">
+                Show my Work
+                <FaLocationArrow />
+              </span>
+            </a>
+          </div>
 
-            <a href="#about" className="mt-6">
-              <MagicButton
-                title="Show my work"
-                icon={<FaLocationArrow />}
-                position="right"
-              />
+          {/* Contact Links */}
+          <div className="mt-6 flex flex-wrap justify-center gap-6">
+            <a
+              href="mailto:mustafa.ashraf.saad@gmail.com"
+              className="text-lg text-white hover:underline flex items-center"
+            >
+              <FaEnvelope className="mr-2 text-xl" /> Gmail
+            </a>
+            <a
+              href="https://github.com/yourgithub"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-lg text-white hover:underline flex items-center"
+            >
+              <FaGithub className="mr-2 text-xl" /> GitHub
+            </a>
+            <a
+              href="https://linkedin.com/in/yourlinkedin"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-lg text-white hover:underline flex items-center"
+            >
+              <FaLinkedin className="mr-2 text-xl" /> LinkedIn
             </a>
           </div>
         </div>
