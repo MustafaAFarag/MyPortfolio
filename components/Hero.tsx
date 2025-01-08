@@ -10,7 +10,7 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 const Hero = () => {
   return (
     <section
-      id="section"
+      id="hero"
       className="relative pb-20 h-screen bg-gradient-to-r from-blue-500 via-purple-600 to-indigo-800"
     >
       {/* Spotlights */}
@@ -61,7 +61,7 @@ const Hero = () => {
                 <FaEnvelope className="mr-2 text-xl" /> Gmail
               </a>
               <a
-                href="https://github.com/yourgithub"
+                href="https://github.com/MustafaAFarag"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-lg text-white hover:underline flex items-center"
@@ -69,7 +69,7 @@ const Hero = () => {
                 <FaGithub className="mr-2 text-xl" /> GitHub
               </a>
               <a
-                href="https://linkedin.com/in/yourlinkedin"
+                href="https://www.linkedin.com/in/mustafaashrafsaad/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-lg text-white hover:underline flex items-center"
@@ -101,22 +101,39 @@ const Hero = () => {
               </span>
             </div>
           </div>
-          <p className="text-left">
+          <p className="text-left text-xl">
             I am a 2nd-year student at FCDS, Alexandria University, with a CGPA
             of 3.3.
             <br />
             <br />
-            MERN Stack Developer with 1 year Experience. Former Data Scientist
-            with 6 months of experience.
+            <span>
+              <span className="text-green-500 font-bold">M</span>
+              <span className="text-gray-500 font-bold">E</span>
+              <span className="text-blue-500 font-bold">R</span>
+              <span className="text-lime-500 font-bold">N</span>
+            </span>{" "}
+            Stack Developer with 1 year Experience. Former Data Scientist with 6
+            months of experience.
             <br />
             <br />
-            Highly skilled in full-stack development, with expertise in
-            JavaScript, TypeScript, React, Next.js, Node.js, Express.js,
-            MongoDB, MySQL, Microsoft SQL Server, and Supabase.
+            Highly skilled in full-stack development, with expertise in{" "}
+            <span className="text-yellow-400 font-bold">JavaScript</span>,{" "}
+            <span className="text-blue-400 font-bold">TypeScript</span>,{" "}
+            <span className="text-sky-400 font-bold">React</span>,{" "}
+            <span className="text-purple-500 font-bold">Next.js</span>,{" "}
+            <span className="text-green-600 font-bold">Node.js</span>,{" "}
+            <span className="text-gray-500 font-bold">Express.js</span>,{" "}
+            <span className="text-green-500 font-bold">MongoDB</span>,{" "}
+            <span className="text-blue-500 font-bold">MySQL</span>,{" "}
+            <span className="text-blue-300 font-bold">
+              Microsoft SQL Server
+            </span>
+            , and <span className="text-teal-400 font-bold">Supabase</span>.
             <br />
             <br />
             In addition to web development, I have ventured into mobile
-            development using React Native.
+            development using{" "}
+            <span className="text-cyan-400 font-bold">React Native</span>.
             <br />
             <br />I am proficient in collaborating harmoniously within teams,
             ensuring effective communication and productive outcomes.

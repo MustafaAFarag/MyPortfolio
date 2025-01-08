@@ -12,7 +12,7 @@ const RecentProjects = () => {
         A small selection of
         <span className="text-purple"> recent projects</span>
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 p-4 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 p-4 w-screen">
         {projects.map((item) => (
           <div
             className="lg:min-h-[32.5rem] h-[25rem] flex flex-col items-center justify-center m-5"
