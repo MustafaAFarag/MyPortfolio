@@ -30,9 +30,14 @@ const Footer = () => {
       </div>
 
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center max-w-7xl mx-auto relative">
-        <p className="md:text-base text-sm md:font-normal font-light">
-          Copyright © 2025 Mustafa Ashraf
-        </p>
+        <div>
+          <p className="md:text-base text-sm md:font-normal font-light">
+            Copyright © 2025 Mustafa Ashraf
+          </p>
+          <p className="md:text-base text-sm md:font-normal font-light">
+            Gmail : mustafa.ashraf.saad@gmail.com
+          </p>
+        </div>
 
         <div className="flex flex-col items-center md:gap-3 gap-6">
           <div className="flex gap-6">
