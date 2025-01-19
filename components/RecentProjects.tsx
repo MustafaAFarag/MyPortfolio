@@ -28,21 +28,27 @@ const RecentProjects = () => {
   // Function to toggle the visibility of the 3rd row
   const handleShowMore = () => setShowMore(!showMore);
 
+  // Determine the number of columns and rows based on the resolution
+  const gridClasses =
+    windowWidth === 1024
+      ? "grid-cols-2 grid-rows-4" // 4 rows with 2 columns for 1024x1280
+      : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4";
+
   return (
     <section id="projects" className="xl:mt-[11rem] 2xl:mt-0">
-      <h1 className="heading">
+      <h1 className="heading m-5">
         A small selection of
         <span className="text-purple"> recent projects</span>
       </h1>
 
-      {/* Grid layout with specific number of columns for 1366x768 (xl) and 1980x1080 (2xl) */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 gap-10 p-4 w-screen">
+      {/* Dynamic grid layout */}
+      <div className={`grid ${gridClasses} gap-24 xl:gap-10 p-4 w-screen`}>
         {/* Render all projects by default for 2xl and for xl, toggle between 6 and 9 projects */}
         {projects
           .slice(0, windowWidth >= 1536 || showMore ? 9 : 6)
           .map((item) => (
             <div
-              className="lg:min-h-[32.5rem] h-[25rem] flex flex-col items-center justify-center m-5"
+              className="lg:min-h-[32.5rem] h-[25rem] flex flex-col items-center justify-center "
               key={item.id}
             >
               <PinContainer
@@ -88,7 +94,7 @@ const RecentProjects = () => {
                           transform: `translateX(-${5 * index + 2}px)`,
                         }}
                       >
-                        <img src={icon} alt="icon5" className="p-2" />
+                        <img src={icon} alt={`icon-${index}`} className="p-2" />
                       </div>
                     ))}
                   </div>

@@ -21,11 +21,6 @@ const Hero = () => {
       <Spotlight className="h-[80vh] w-[50vw] top-10 left-full" fill="purple" />
       <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
 
-      <div className="absolute top-4 left-1/2 transform -translate-x-1/2 bg-yellow-500 text-black text-sm md:text-base font-medium px-4 py-2 rounded-md shadow-lg z-20">
-        🚧 This website is currently under development. Some features may not
-        work as expected. 🚧
-      </div>
-
       {/* Grid Background */}
       <div className="absolute inset-0 w-full h-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.05] bg-grid-black-100/[0.5] flex items-center justify-center z-0"></div>
 
@@ -57,7 +52,7 @@ const Hero = () => {
               </span>
             </a>
 
-            <div className="mt-4 sm:mt-6 flex flex-wrap justify-center items-center gap-4 sm:gap-6">
+            <div className=" flex flex-wrap justify-center items-center gap-4 sm:gap-6">
               <a
                 href="mailto:mustafa.ashraf.saad@gmail.com"
                 className="text-base sm:text-lg text-white hover:underline flex items-center"
