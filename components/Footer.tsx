@@ -29,7 +29,7 @@ const Footer = () => {
         </a>
       </div>
 
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center max-w-7xl mx-auto relative">
+      <div className="flex mt-16 md:flex-row flex-col justify-around items-center max-w-7xl mx-auto relative">
         <div>
           <p className="md:text-base text-sm md:font-normal font-light">
             Copyright © 2025 Mustafa Ashraf
