@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative pb-20 h-screen bg-gradient-to-r from-blue-500 via-purple-600 to-indigo-800"
+      className="relative pb-20 bg-gradient-to-r from-blue-500 via-purple-600 to-indigo-800 h-full"
     >
       {/* Spotlights */}
       <Spotlight
@@ -25,7 +25,7 @@ const Hero = () => {
       <div className="absolute inset-0 w-full h-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.05] bg-grid-black-100/[0.5] flex items-center justify-center z-0"></div>
 
       {/* Hero Content */}
-      <div className="relative z-10 flex justify-center pt-20 px-6 sm:pt-28 md:pt-32">
+      <div className="relative z-10 flex justify-center pt-20 px-6 sm:pt-28 md:pt-32 mb-20">
         {/* Center Content */}
         <div className="mx-auto flex flex-col items-center text-center">
           <TextGenerateEffect

@@ -27,7 +27,7 @@ const RecentProjects = () => {
   const handleShowMore = () => setShowMore(!showMore);
 
   return (
-    <section id="projects" className="xl:mt-[11rem] 2xl:mt-0">
+    <section id="projects" className=" ">
       <h1 className="heading m-5">
         A small selection of
         <span className="text-purple"> recent projects</span>
