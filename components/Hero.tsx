@@ -13,6 +13,13 @@ const Hero = () => {
       id="hero"
       className="relative pb-20 bg-gradient-to-r from-blue-500 via-purple-600 to-indigo-800 h-full"
     >
+      {/* Development Banner */}
+      <div className="fixed top-0 left-0 w-full bg-yellow-500 text-black text-center py-2 z-[999]">
+        <p className="text-sm sm:text-base font-semibold">
+          🚧 Website is still in development. Some functionalities may not work.
+          🚧
+        </p>
+      </div>
       {/* Spotlights */}
       <Spotlight
         className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
